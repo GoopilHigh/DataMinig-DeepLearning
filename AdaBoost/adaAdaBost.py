@@ -2,10 +2,10 @@ import numpy as np
 from sklearn import tree, metrics
 from sklearn.ensemble import AdaBoostClassifier
 
-train_data = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_train.data')
-train_labels = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_train.labels')
-val_data = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_valid.data')
-val_labels = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_valid.labels')
+train_data = np.genfromtxt('../Dataset/ADA/ada_train.data')
+train_labels = np.genfromtxt('../Dataset/ADA/ada_train.labels')
+val_data = np.genfromtxt('../Dataset/ADA/ada_valid.data')
+val_labels = np.genfromtxt('../Dataset/ADA/ada_valid.labels')
 
 model =  AdaBoostClassifier(n_estimators=100)
 model.fit(train_data,train_labels)

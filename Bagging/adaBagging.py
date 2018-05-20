@@ -3,10 +3,10 @@ from sklearn import tree, metrics
 from sklearn.ensemble import BaggingClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
-train_data = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_train.data')
-train_labels = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_train.labels')
-val_data = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_valid.data')
-val_labels = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_valid.labels')
+train_data = np.genfromtxt('../Dataset/ADA/ada_train.data')
+train_labels = np.genfromtxt('../Dataset/ADA/ada_train.labels')
+val_data = np.genfromtxt('../Dataset/ADA/ada_valid.data')
+val_labels = np.genfromtxt('../Dataset/ADA/ada_valid.labels')
 
 model = BaggingClassifier(KNeighborsClassifier(),max_samples=0.5, max_features=0.5)
 model.fit(train_data,train_labels)

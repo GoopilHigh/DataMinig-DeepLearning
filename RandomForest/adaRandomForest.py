@@ -3,10 +3,10 @@ from sklearn import tree, metrics
 from sklearn.ensemble import RandomForestClassifier
 from math import sqrt
 
-train_data = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_train.data')
-train_labels = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_train.labels')
-val_data = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_valid.data')
-val_labels = np.genfromtxt('/home/goop/rendu/Tek_4/DataMining/DataSet/Ada/ADA/ada_valid.labels')
+train_data = np.genfromtxt('../Dataset/ADA/ada_train.data')
+train_labels = np.genfromtxt('../Dataset/ADA/ada_train.labels')
+val_data = np.genfromtxt('../Dataset/ADA/ada_valid.data')
+val_labels = np.genfromtxt('../Dataset/ADA/ada_valid.labels')
 
 model = RandomForestClassifier(n_estimators=10,max_features=round(sqrt(48)))
 model.fit(train_data,train_labels)
