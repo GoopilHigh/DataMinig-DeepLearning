@@ -1,4 +1,4 @@
-# DataMinig
+# DataMining
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3bc596062eb34b4aaa0b37786c1bc5b7)](https://app.codacy.com/app/GoopilHigh/DataMining?utm_source=github.com&utm_medium=referral&utm_content=Osd2/DataMining&utm_campaign=Badge_Grade_Dashboard)
 
